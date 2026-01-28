@@ -239,3 +239,6 @@ Returns previously generated content.
 
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/1622e577-21de-4a73-8da8-0d77c7d9f2db" />
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/c9b3520e-f9d1-451e-bd1a-7a0cef893a52" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/a31e7431-98c5-4e3e-bec2-41973d9f6270" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/6e265ba2-44b1-475a-abb6-be1e86272d03" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/6e1fbdfa-45fb-45ba-8247-6f08f6c3b86a" />
