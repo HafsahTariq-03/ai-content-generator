@@ -11,7 +11,7 @@ This project focuses on **responsiveness, accessibility, component reusability, 
 ## 🔍 Project Objective
 
 * Demonstrate frontend engineering skills using modern tools
-* Build a real-world inspired AI content generation interface
+* Build a real world inspired AI content generation interface
 * Showcase responsive design, state management, and UI polish
 * Follow best practices expected in professional frontend teams
 
@@ -21,7 +21,7 @@ This project focuses on **responsiveness, accessibility, component reusability, 
 
 * **Responsive UI**
 
-  * Mobile-first design
+  * Mobile first design
   * Optimized for mobile, tablet, and desktop
   * No horizontal scrolling at any breakpoint
 
@@ -40,21 +40,21 @@ This project focuses on **responsiveness, accessibility, component reusability, 
 * **Generation History**
 
   * Scrollable thumbnail gallery
-  * Represents real-world usage history
+  * Represents real world usage history
   * Data fetched via mock API
 
 * **Polished UX**
 
   * Hover effects and transitions
   * Clear empty, loading, and error states
-  * Touch-friendly interactions
+  * Touch friendly interactions
 
 ---
 
 ## 🧰 Tech Stack
 
 * **Framework:** Next.js 14 (App Router compatible structure)
-* **Language:** JavaScript (ES6+)
+* **Language:** JavaScript 
 * **Styling:**
 
   * Tailwind CSS (utility-first styling)
@@ -69,7 +69,7 @@ This project focuses on **responsiveness, accessibility, component reusability, 
 ### Prerequisites
 
 * Node.js 18+
-* npm or yarn
+* npm 
 
 ### Steps
 
@@ -91,20 +91,20 @@ http://localhost:3000
 
 ```
 ai-content-generator/
-├── components/          # Reusable UI components
+├── components/        
 │   ├── Navigation.js
 │   ├── InputPanel.js
 │   ├── GeneratedContent.js
 │   └── HistorySection.js
 │
 ├── pages/
-│   ├── api/             # Mock API endpoints
+│   ├── api/            
 │   │   ├── generate.js
 │   │   └── history.js
 │   ├── _app.js
 │   └── index.js
 │
-├── styles/              # CSS Modules & global styles
+├── styles/             
 │   ├── globals.css
 │   └── *.module.css
 │
