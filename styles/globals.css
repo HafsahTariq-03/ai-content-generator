@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #FF8C42;
+  --primary-light: #FFA07A;
+  --primary-dark: #FF6B1A;
+}
+
+body {
+  background: linear-gradient(180deg, #20002c 0%, #cbb4d4 100%);
+  min-height: 100vh;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.dark body {
+  background: #000000;
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+* {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+

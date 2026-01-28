@@ -1,0 +1,165 @@
+.historySection {
+  position: relative;
+  font-family: sans-serif;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 0.7rem;
+  transition: all ease 0.3s;
+  color: #ffffff;
+}
+
+.dark .historySection {
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 1px solid rgba(255, 255, 255, 0.222);
+}
+
+.dark .historySection *,
+.dark .historySection p,
+.dark .historySection span,
+.dark .historySection div,
+.dark .historySection a,
+.dark .historySection h1,
+.dark .historySection h2,
+.dark .historySection h3 {
+  color: #ffffff !important;
+}
+
+.dark .historySection svg {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+
+.historySection:hover {
+  box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.dark .historySection:hover {
+  box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.dark .title,
+.dark .historySection .title,
+.dark .historySection h2,
+.dark .historySection .header .title,
+.dark .historySection .header h2 {
+  color: #ffffff !important;
+}
+
+.viewAll {
+  font-size: 0.875rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s;
+  position: relative;
+  z-index: 1;
+}
+
+.dark .viewAll,
+.dark .historySection .viewAll,
+.dark .historySection .header .viewAll,
+.dark .historySection a {
+  color: #ffffff !important;
+}
+
+.viewAll:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.dark .viewAll:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.thumbnails {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scrollbar-width: thin;
+}
+
+.thumbnails::-webkit-scrollbar {
+  height: 6px;
+}
+
+.thumbnails::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-700 rounded;
+}
+
+.thumbnails::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-600 rounded;
+}
+
+.thumbnail {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 0.7rem;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 1px solid rgba(0, 0, 0, 0.222);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  transition: all ease 0.3s;
+  position: relative;
+}
+
+.dark .thumbnail {
+  border: 1px solid rgba(255, 255, 255, 0.222);
+}
+
+
+.thumbnail:hover {
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.454);
+}
+
+.dark .thumbnail:hover {
+  box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.454);
+}
+
+.thumbnailImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s;
+  position: relative;
+  z-index: 2;
+}
+
+.thumbnailImage:hover {
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+  }
+}
+

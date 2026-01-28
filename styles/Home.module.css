@@ -1,0 +1,65 @@
+.main {
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.leftPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.leftCard {
+  transition: filter 200ms ease, opacity 200ms ease, transform 200ms ease;
+}
+
+.leftPanel:has(.leftCard:hover) .leftCard:not(:hover) {
+  filter: blur(3px);
+  opacity: 0.65;
+}
+
+.leftPanel:has(.leftCard:hover) .leftCard:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.rightPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-right: -2rem;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    grid-template-columns: 400px 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .rightPanel {
+    margin-right: -1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .leftPanel {
+    order: 2;
+  }
+
+  .rightPanel {
+    order: 1;
+    margin-right: 0;
+  }
+}
+
